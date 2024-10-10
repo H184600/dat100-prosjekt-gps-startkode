@@ -4,8 +4,15 @@ public class Main {
 
 	public static void main(String[] args) {
 		
-		// TODO
+		GPSPoint point = new GPSPoint(1, 2.0, 3.0, 5.0);
+		
+		System.out.println("Tidspunkt: " + point.getTime());
+		
+		point.setTime(2);
+		
+		System.out.println(point.toString());
+		}
 		
 	}
 
-}
+

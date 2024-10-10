@@ -7,7 +7,15 @@ public class Main {
 	
 	public static void main(String[] args) {
 
-		// TODO
+		GPSPoint gpspoint1 = new GPSPoint(4, 1.0, 2.0, 3.0);
+		GPSPoint gpspoint2 = new GPSPoint(13, 3.0, 4.2, 5.3);
+		
+		GPSData gpsData = new GPSData(2);
+		
+		gpsData.insertGPS(gpspoint1);
+		gpsData.insertGPS(gpspoint2);
+		
+		gpsData.print();
 		
 	}
 }
